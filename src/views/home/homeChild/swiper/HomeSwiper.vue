@@ -5,10 +5,10 @@
             :space-between="50"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
-            class="ee"
-    >
-      <swiper-slide v-for="(item,index) in bannerList">
-        <img :src="item.imageUrl" alt=""></swiper-slide>
+            class="ee">
+      <swiper-slide v-for="(item,index)in bannerList" :key="index" >
+        <img :src="item.imageUrl" alt="">
+        </swiper-slide>
     </swiper>
   </div>
 </template>
